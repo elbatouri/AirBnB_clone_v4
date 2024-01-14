@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   // Task 3
   $.ajax('http://0.0.0.0:5001/api/v1/status').done(function (data) {
@@ -64,6 +65,7 @@ $(document).ready(function () {
 
       $('section.places').append(template);
     }
+  });
 
     $('button').click(function () {
       const selectedAmenities = Object.keys(amenityIds);
@@ -113,6 +115,4 @@ $(document).ready(function () {
         }
       });
     });
-  });
 });
-
